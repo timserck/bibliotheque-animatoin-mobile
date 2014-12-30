@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head> 
+		<meta charset="utf-8" />
+		<title>ma page</title>
+		
+		<style>
+
+body,html{
+	height: 100%;
+	margin:0;
+	padding: 0;
+	background: #eee;
+	font-family: sans-serif;
+	text-align: center;
+}
+.logo{
+	background: yellow;
+	width: 300px;
+	height: 250px;
+
+	margin: 2.5% auto;
+
+}
+.container{
+position: relative;
+}
+
+.title{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 300px;
+	height: 80px;
+	overflow: hidden;
+}
+
+span{
+	font-size: 50px;
+	line-height: 100px;
+	display: inline-block;
+	
+}
+
+p{
+	font-size: 25px;
+	line-height: 0px;
+}
+
+.title__s1{
+	
+	-webkit-transform: translateX(-185px);
+	-webkit-animation: moves_1 forwards  3s; /* Chrome, Safari, Opera */
+   
+    
+	
+}
+
+.title__s2{
+	
+	-webkit-transform: translateX(150px);
+	-webkit-animation: moves_2 forwards  3s 6s; /* Chrome, Safari, Opera */
+   
+}
+
+.title__o{
+	-webkit-transform: translateY(75px);
+		-webkit-animation: moveo forwards cubic-bezier(0.175, 0.885, 0.32, 1.275)  3s 3s; /* Chrome, Safari, Opera */
+   
+	
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes moves_1 {
+    0% {
+    	transform: translateX(-185px);
+    	
+
+    }
+     12.5%{
+    	transform: translateX(0);
+    }
+
+    25%{
+    	opacity: .5;
+    	transform: translateX(0);
+    	transform: scale(.8);
+    }
+
+    37.5%{
+    	opacity: 1;
+    	transform: scale(1);
+    	transform: translateX(0);
+
+    }
+
+     50%{
+    	opacity: .5;
+    	transform: translateX(0);
+    	transform: scale(.8);
+
+
+    }
+    62.5% {
+    	
+    	opacity: 1;
+    	transform: translateX(0);
+    	transform: scale(1);
+
+
+
+    }
+    75% {
+    	
+    	opacity: .5;
+    	transform: translateX(0);
+    	transform: scale(.8);
+
+
+
+    }
+
+    87.5% {
+    	
+    	opacity: 1;
+    	transform: translateX(0);
+    	transform: scale(1);
+
+
+
+    }
+
+        100% {
+    	
+    	opacity: 1;
+    	transform: translateX(0);
+    	transform: scale(1);
+
+
+
+    }
+}
+
+@-webkit-keyframes moves_2 {
+
+	    0% {
+    	transform: translateX(150px);
+    	
+
+    }
+     12.5%{
+    	transform: translateX(0);
+    }
+
+    25%{
+    	opacity: .5;
+    	transform: translateX(0);
+    	transform: scale(.8);
+
+    }
+
+    37.5%{
+    	opacity: 1;
+    	transform: translateX(0);
+    	transform: scale(1);
+
+
+    }
+
+     50%{
+    	opacity: .5;
+    	transform: translateX(0);
+    	transform: scale(.8);
+
+
+    }
+    62.5% {
+    	
+    	opacity: 1;
+    	transform: translateX(0);
+    	transform: scale(1);
+
+
+
+    }
+    75% {
+    	
+    	opacity: .5;
+    	transform: translateX(0);
+    	transform: scale(.8);
+
+
+
+    }
+
+    87.5% {
+    	
+    	opacity: 1;
+    	transform: translateX(0);
+    	transform: scale(1);
+
+
+
+    }
+
+        100% {
+    	
+    	opacity: 1;
+    	transform: translateX(0);
+    	transform: scale(1);
+
+
+
+    }
+}
+
+
+@-webkit-keyframes moveo {
+    0% {
+    	transform: translateY(75px);
+
+
+    }
+    12.5% {
+    	transform: translateY(0px);
+    }
+
+    25% {
+    	transform: translateY(0px);
+    	opacity: .5;
+    }
+
+    37.5% {
+    	transform: translateY(0px);
+    	opacity: 1;
+
+    }
+
+    50% {
+    	transform: translateY(0px);
+    	opacity: .5;
+
+    }
+
+      62.5% {
+    	transform: translateY(0px);
+    	opacity: 1;
+
+    }
+
+        75% {
+    	transform: translateY(0px);
+    	opacity: .5;
+
+    }
+
+            87.5% {
+    	transform: translateY(0px);
+    	opacity: 1;
+
+    }
+
+              100% {
+    	transform: translateY(0px);
+    	opacity: 1;
+
+    }
+}
+
+
+
+		</style>
+	</head>
+	
+	<body>
+<div class="container">
+<div class="logo"></div>
+<div class="title">
+		<span class="title__s1" >S</span><span class="title__o">O</span><span class="title__s2">S</span>
+</div>
+<p>Heaj</p>
+
+</div>
+
+		
+	
+
+	</body>
+	
+</html>

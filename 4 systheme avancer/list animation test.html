@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head> 
+		<meta charset="utf-8" />
+		<title>ma page</title>
+        <script src="jquery-1.11.1.min.js"></script>
+        <script src="transit.js"></script>
+		
+		<style>
+
+.wrapper{
+    height: 200px;
+    width: 300px;
+    margin: 50% auto;
+    background: red;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.up,.down{
+    position: absolute;
+    height: 50px;
+    background: #bbb;
+        width: 100%;
+    left: 0;
+    z-index: 5555;
+    cursor: pointer;
+ 
+}
+
+.up{
+top: 0px;
+
+}
+
+.arrow_up{
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid black;
+    margin: 12.5px auto;
+
+}
+
+.arrow_down{
+    width: 0; 
+    height: 0; 
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    
+    border-top: 25px solid black;
+    margin: 12.5px auto;
+
+}
+
+.arrow_up:hover{
+     border-bottom: 25px solid #eee;
+}
+
+.arrow_down:hover{
+     border-top: 25px solid #eee;
+
+
+}
+
+.down{
+bottom: 0px;
+}
+
+.cours{
+    margin: 0; padding: 0;
+    position: relative;
+    display: block;
+    background: orange;
+    /*-webkit-transform: translateY(50px);*/
+
+}
+
+li{
+    display: block;
+    list-style: none;
+    height: 48px;
+    background: #eee;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+		</style>
+	</head>
+	
+	<body>
+	
+    <div class="wrapper">
+        
+        <div class="up"><div class="arrow_up"></div></div>
+        <div class="down"><div class="arrow_down"></div></div>
+
+        <ul class="cours">
+            <li> <a href="">d</a></li>
+            <li> <a href="">f</a></li>
+            <li> <a href="">r</a></li>
+            <li> <a href="">r</a></li>
+            <li> <a href="">r</a></li>
+            <li> <a href="">r</a></li>
+            <li> <a href="">r</a></li>
+            <li> <a href="">r</a></li>
+        </ul>
+    </div>
+
+	</body>
+    <script>
+    $(document).ready(function() {
+
+var up = $('.up');
+var down = $('.down');
+var cours = $('.cours');
+var current = $('.cours > *').length;
+var length = $('.cours > *').length;
+var moins = "+=50";
+var plus = "-=50";
+console.log(length);
+        up.click(function(){
+
+if (current>length){
+length++;
+console.log(length);
+
+
+cours.transition({ y: moins });
+
+}
+    });
+
+                down.click(function(){
+
+                    if ( length >=5){
+length--;
+console.log(length);
+
+cours.transition({ y: plus });
+}
+    });
+
+    });
+	</script>
+</html>

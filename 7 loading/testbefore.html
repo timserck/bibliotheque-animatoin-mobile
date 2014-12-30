@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head> 
+		<meta charset="utf-8" />
+		<title>ma page</title>
+		<style>
+			
+div{
+
+	margin: 0 auto;
+	position: relative;
+}
+
+div:after{
+content: "";
+position: absolute;
+display: block;
+height:25px;
+width:25px;
+background: blue;
+border-radius: 50%;
+-webkit-animation: testa 2s ease-in-out infinite
+}
+
+div:before{
+content: "";
+position: absolute;
+top: 0;
+left: 100px;
+display: block;
+height:25px;
+width:25px;
+background: green;
+border-radius: 50%;
+
+-webkit-animation: test 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes test {
+	0% {
+		left: 100px;
+		-webkit-transform: scale(1.1);
+		z-index: 1;
+	}
+
+	50% {
+		left: 0%;
+		-webkit-transform: scale(1);
+		z-index: 0;
+
+	}
+
+	100% {
+		left: 100px;
+		-webkit-transform: scale(1.1);
+		z-index: 1;
+
+	}
+}
+
+@-webkit-keyframes testa {
+	0% {
+		left: 0;
+		-webkit-transform: scale(1.1);
+		z-index: 0;
+
+	}
+
+	50% {
+		left: 100px;
+		-webkit-transform: scale(1);
+		z-index: 1;
+
+	}
+
+	100% {
+		left: 0;
+		-webkit-transform: scale(1.1);
+		z-index: 0;
+
+	}
+}
+
+
+
+		</style>
+	</head>
+	
+	<body>
+	
+<div>
+	
+</div>
+				
+
+
+	</body>
+</html>
