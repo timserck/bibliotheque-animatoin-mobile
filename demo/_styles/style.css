@@ -30,7 +30,7 @@ section:nth-child(odd){
 
 .content{
 	margin: 0 auto;
-	width: 50%;
+	width: 65%;
 	/*background: green;*/
 }
 
@@ -55,6 +55,7 @@ iframe{
 	/*background: orange;*/
 	margin: 5% auto;
 	display: block;
+	border: 1px solid black;
 }
 
 footer small{
