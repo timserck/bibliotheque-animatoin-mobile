@@ -1,6 +1,18 @@
 $(document).ready(function() {
 
 	var next = $('.next');
+
+	
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            next.fadeIn();
+        } else {
+            next.fadeOut();
+        }
+		});
+        
+    
+
 		next.click( function(event) { // Au clic sur un élément
 			
 			console.log('testingscrool');
