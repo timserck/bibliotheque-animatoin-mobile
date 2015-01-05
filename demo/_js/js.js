@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
 	var next = $('.next');
-
+	 next.fadeOut();
 	
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
+        if ($(this).scrollTop() > 0) {
             next.fadeIn();
         } else {
             next.fadeOut();
